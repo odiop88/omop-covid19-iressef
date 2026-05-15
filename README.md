@@ -1,6 +1,6 @@
 # OMOP CDM Standardization of COVID-19 Surveillance Data from Senegal
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20218885.svg)](https://doi.org/10.5281/zenodo.20218885)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
@@ -108,7 +108,7 @@ If you use or adapt these materials, please cite both the publication and this r
 > Diop O, Odhiambo R, Momanyi R, Ochola M, Diouf O, Diallo AS, et al. Standardizing multi-source COVID-19 surveillance data into the OMOP Common Data Model: a first implementation case study from Senegal. *PLOS ONE*. 2026. *(submitted)*
 
 **Repository:**
-> Diop O, Odhiambo R, Momanyi R, Ochola M, Diouf O, Diallo AS, et al. OMOP CDM Standardization of COVID-19 Surveillance Data from Senegal — ETL Materials and Scripts (v1.0). Zenodo. 2026. https://doi.org/10.5281/zenodo.XXXXXXX
+> Diop O, Odhiambo R, Momanyi R, Ochola M, Diouf O, Diallo AS, et al. OMOP CDM Standardization of COVID-19 Surveillance Data from Senegal — ETL Materials and Scripts (v1.0). Zenodo. 2026. https://doi.org/10.5281/zenodo.20218885
 
 ## Ethics
 
