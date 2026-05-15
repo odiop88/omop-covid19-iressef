@@ -1,0 +1,87 @@
+{
+  "title": "OMOP CDM Standardization of COVID-19 Surveillance Data from Senegal: ETL Materials, Mapping Specifications, and Data Quality Outputs",
+  "description": "This repository contains all Extract-Transform-Load (ETL) materials, semantic mapping specifications, SQL scripts, data quality assessment outputs, and ATLAS characterization results used to convert a heterogeneous multi-source COVID-19 surveillance dataset from Senegal (March 2020 – April 2022, 13,090 individuals) into the Observational Medical Outcomes Partnership Common Data Model (OMOP CDM) version 5.4. The materials include WhiteRabbit scan reports, Usagi concept mapping files (SNOMED CT, LOINC, RxNorm), Rabbit-in-a-Hat mapping specifications, SQL loading scripts for PostgreSQL, OHDSI Data Quality Dashboard results (97% overall pass rate), and ATLAS cohort characterization outputs. This is the first fully documented OMOP CDM implementation on COVID-19 surveillance data in Senegal and francophone West Africa. The source surveillance data cannot be shared due to ethical and legal restrictions; these materials are provided to enable methodological reproducibility and reuse.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Diop, Ousmane",
+      "affiliation": "Institut de Recherche en Santé, de Surveillance Épidémiologique et de Formation (IRESSEF), Dakar, Senegal",
+      "orcid": "0009-0005-3008-0229"
+    },
+    {
+      "name": "Odhiambo, Rachel",
+      "affiliation": "African Population and Health Research Center (APHRC), Nairobi, Kenya"
+    },
+    {
+      "name": "Momanyi, Reipeinter",
+      "affiliation": "African Population and Health Research Center (APHRC), Nairobi, Kenya"
+    },
+    {
+      "name": "Ochola, Michael",
+      "affiliation": "African Population and Health Research Center (APHRC), Nairobi, Kenya"
+    },
+    {
+      "name": "Diouf, Ousmane",
+      "affiliation": "Institut de Recherche en Santé, de Surveillance Épidémiologique et de Formation (IRESSEF), Dakar, Senegal"
+    },
+    {
+      "name": "Diallo, Abdoulaye Samba",
+      "affiliation": "Institut de Recherche en Santé, de Surveillance Épidémiologique et de Formation (IRESSEF), Dakar, Senegal"
+    },
+    {
+      "name": "Padane, Abdou",
+      "affiliation": "Institut de Recherche en Santé, de Surveillance Épidémiologique et de Formation (IRESSEF), Dakar, Senegal"
+    },
+    {
+      "name": "Kiragga, Agnes",
+      "affiliation": "African Population and Health Research Center (APHRC), Nairobi, Kenya"
+    },
+    {
+      "name": "Sarr, Moussa",
+      "affiliation": "Institut de Recherche en Santé, de Surveillance Épidémiologique et de Formation (IRESSEF), Dakar, Senegal"
+    },
+    {
+      "name": "Mboup, Souleymane",
+      "affiliation": "Institut de Recherche en Santé, de Surveillance Épidémiologique et de Formation (IRESSEF), Dakar, Senegal"
+    },
+    {
+      "name": "Mboup, Aminata",
+      "affiliation": "Institut de Recherche en Santé, de Surveillance Épidémiologique et de Formation (IRESSEF), Dakar, Senegal"
+    }
+  ],
+  "keywords": [
+    "OMOP CDM",
+    "OHDSI",
+    "COVID-19",
+    "surveillance data",
+    "ETL pipeline",
+    "data standardization",
+    "health data interoperability",
+    "Senegal",
+    "West Africa",
+    "francophone Africa",
+    "data quality",
+    "SNOMED CT",
+    "LOINC",
+    "RxNorm",
+    "real-world data"
+  ],
+  "license": {
+    "id": "MIT"
+  },
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/odiop88/omop-covid19-iressef",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "ohdsi"
+    }
+  ],
+  "notes": "Associated publication: Diop O et al. Standardizing multi-source COVID-19 surveillance data into the OMOP Common Data Model: a first implementation case study from Senegal. PLOS ONE. 2026. (submitted). The source surveillance data are not included due to ethical and legal restrictions (CNERS approval, Senegalese Law No. 2008-12). Access requests may be directed to ousmane.diop@iressef.org.",
+  "access_right": "open"
+}
