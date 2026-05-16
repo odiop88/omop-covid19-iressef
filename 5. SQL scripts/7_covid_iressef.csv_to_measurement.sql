@@ -32,10 +32,10 @@ covid_with_ids AS (
 result_map(txt, concept_id) AS (
     VALUES
       -- POSITIF
-      ('Positif',4126681::bigint), -- Detected
+      ('Positive',4126681::bigint), -- Detected
 
       -- NEGATIF
-      ('Negatif',9190::bigint), -- Not detected
+      ('Negative',9190::bigint), -- Not detected
 
       -- Equivocal
       ('Inconclusive',0),   -- Indeterminate
