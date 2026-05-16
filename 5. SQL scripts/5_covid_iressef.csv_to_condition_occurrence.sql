@@ -33,11 +33,7 @@ unpivoted_conditions AS (
     UNION ALL
     SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'diarrhea', 196523 FROM covid_with_ids WHERE diarrhea = 'yes'
     UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'sore throat', 4036632 FROM covid_with_ids WHERE sore_throat = 'yes'
-    UNION ALL
     SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'muscle pain', 442752 FROM covid_with_ids WHERE muscle_pain = 'yes'
-    UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'cough', 4137801 FROM covid_with_ids WHERE cough = 'yes'
     UNION ALL
     SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'vomiting', 441408 FROM covid_with_ids WHERE vomiting = 'yes'
     UNION ALL
