@@ -74,7 +74,8 @@ The standardization followed the OHDSI methodological framework:
 |---|---|
 | Person | 13,090 |
 | Measurement (RT-PCR) | 13,403 |
-| Condition Occurrence + Observation | 22,025 |
+| Condition Occurrence | 11,290 |
+| Observation | 48,995 |
 | Death | 52 |
 | DQD Overall Pass Rate | 97% |
 | DQD Corrected Pass Rate | 98% |
