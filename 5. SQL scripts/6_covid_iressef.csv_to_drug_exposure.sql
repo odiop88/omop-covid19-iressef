@@ -28,17 +28,19 @@ unpivoted_drugs AS (
     SELECT person_id, visit_occurrence_id, CAST(dov AS date) AS exposure_start_date, 'perfalgan' AS drug, 1125315 AS drug_concept_id
     FROM covid_with_ids WHERE perfalgan = 'yes'
     UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'efferalgan', 43146071 FROM covid_with_ids WHERE efferalgan = 'yes'
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'Acetaminophen Oral Tablet [EFFERALGAN]', 43146071 FROM covid_with_ids WHERE efferalgan = 'yes'
     UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'doliprane', 43212028 FROM covid_with_ids WHERE doliprane = 'yes'
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'Acetaminophen Oral Tablet [DOLIPRANE]', 43212028 FROM covid_with_ids WHERE doliprane = 'yes'
     UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'azicure', 1734104 FROM covid_with_ids WHERE azicure = 'yes'
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'Azithromycin', 1734104 FROM covid_with_ids WHERE azicure = 'yes'
     UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'azithromycin', 1734104 FROM covid_with_ids WHERE azithromycin = 'yes'
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'Azithromycin', 1734104 FROM covid_with_ids WHERE azithromycin = 'yes'
     UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'paracetamol', 1125315 FROM covid_with_ids WHERE paracetamol = 'yes'
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'Acetaminophen', 1125315 FROM covid_with_ids WHERE paracetamol = 'yes'
     UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'vitamine_c', 19011773 FROM covid_with_ids WHERE vitamine_c = 'yes'
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'Ascorbic acid', 19011773 FROM covid_with_ids WHERE vitamine_c = 'yes'
+    UNION ALL
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'Ascorbic acid', 19011773 FROM covid_with_ids WHERE cac_1000 = 'yes'
     UNION ALL -- Vaccines
     SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'sinopharm', 0 FROM covid_with_ids WHERE covid_vaccine_type_dose1 = 'sinopharm' OR covid_vaccine_type_dose2 = 'sinopharm'
     UNION ALL
