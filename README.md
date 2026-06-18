@@ -139,4 +139,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-The team acknowledges with gratitude the support of their respective institutions and the Data Science Without Borders (DSWB) project.
+The team acknowledges with gratitude the support of their respective institutions for the production of this manuscript.
