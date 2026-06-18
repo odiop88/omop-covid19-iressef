@@ -1,3 +1,4 @@
+TRUNCATE TABLE omop_staging.measurement CASCADE;
 -- 1) Séquence measurement_id (inchanged)
 ALTER SEQUENCE omop_staging.measurement_id_seq RESTART WITH 1;
 
@@ -31,10 +32,10 @@ covid_with_ids AS (
 -- Map texte → concept_id standard pour le résultat
 result_map(txt, concept_id) AS (
     VALUES
-      -- POSITIF
+      -- POSITIVE
       ('Positive',4126681::bigint), -- Detected
 
-      -- NEGATIF
+      -- NEGATIVE
       ('Negative',9190::bigint), -- Not detected
 
       -- Equivocal
@@ -78,7 +79,7 @@ unpivoted_measurement AS (
     test_result                               AS value_source_value        -- texte brut conservé
   FROM covid_with_ids c
   LEFT JOIN result_map rm
-    ON rm.txt = LOWER(TRIM(c.test_result))
+    ON LOWER(rm.txt) = LOWER(TRIM(c.test_result))
   WHERE LOWER(TRIM(c.test_type)) = 'pcr'
     AND c.test_result IS NOT NULL
 
@@ -97,7 +98,7 @@ unpivoted_measurement AS (
     test_result                               AS value_source_value
   FROM covid_with_ids c
   LEFT JOIN result_map rm
-    ON rm.txt = LOWER(TRIM(c.test_result))
+    ON LOWER(rm.txt) = LOWER(TRIM(c.test_result))
   WHERE LOWER(TRIM(c.test_type)) = 'serology'
     AND c.test_result IS NOT NULL
 )
