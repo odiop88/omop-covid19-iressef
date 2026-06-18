@@ -25,20 +25,20 @@ covid_with_ids AS (
     LEFT JOIN dedup_visit v ON p.person_id = v.person_id AND CAST(c.dov AS date) = v.visit_start_date -- Code for manage every visit
 ),
 unpivoted_drugs AS (
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date) AS exposure_start_date, 'perfalgan' AS drug, 43834892 AS drug_concept_id
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date) AS exposure_start_date, 'perfalgan' AS drug, 1125315 AS drug_concept_id
     FROM covid_with_ids WHERE perfalgan = 'yes'
     UNION ALL
     SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'efferalgan', 43146071 FROM covid_with_ids WHERE efferalgan = 'yes'
     UNION ALL
     SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'doliprane', 43212028 FROM covid_with_ids WHERE doliprane = 'yes'
     UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'azicure', 36853655 FROM covid_with_ids WHERE azicure = 'yes'
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'azicure', 1734104 FROM covid_with_ids WHERE azicure = 'yes'
     UNION ALL
     SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'azithromycin', 1734104 FROM covid_with_ids WHERE azithromycin = 'yes'
     UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'paracetamol', 41144113 FROM covid_with_ids WHERE paracetamol = 'yes'
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'paracetamol', 1125315 FROM covid_with_ids WHERE paracetamol = 'yes'
     UNION ALL
-    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'vitamine_c', 19008339 FROM covid_with_ids WHERE vitamine_c = 'yes'
+    SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'vitamine_c', 19011773 FROM covid_with_ids WHERE vitamine_c = 'yes'
     UNION ALL -- Vaccines
     SELECT person_id, visit_occurrence_id, CAST(dov AS date), 'sinopharm', 0 FROM covid_with_ids WHERE covid_vaccine_type_dose1 = 'sinopharm' OR covid_vaccine_type_dose2 = 'sinopharm'
     UNION ALL
