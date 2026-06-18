@@ -97,7 +97,7 @@ The standardization followed the OHDSI methodological framework:
 
 ## Data Availability
 
-The **source surveillance data** cannot be shared publicly due to ethical and legal restrictions related to Senegalese personal data protection legislation (Loi n° 2008-12 du 25 janvier 2008) and the conditions of approval by the Comité National d'Éthique pour la Recherche en Santé (CNERS) of Senegal. Access requests from qualified researchers may be directed to the Data Management Department, IRESSEF, Dakar, Senegal (contact: ousmane.diop@iressef.org).
+The **source surveillance data** cannot be shared publicly due to ethical and legal restrictions related to Senegalese personal data protection legislation (Loi n° 2008-12 du 25 janvier 2008). Access requests from qualified researchers may be directed to the Data Management Department, IRESSEF, Dakar, Senegal (contact: ousmane.diop@iressef.org).
 
 All **ETL materials, mapping specifications, SQL scripts, and data quality outputs** are publicly available in this repository under the MIT license to enable methodological reproducibility and reuse.
 
@@ -113,7 +113,7 @@ If you use or adapt these materials, please cite both the publication and this r
 
 ## Ethics
 
-This study was reviewed and approved by the Comité National d'Éthique pour la Recherche en Santé (CNERS) of the Republic of Senegal. All personally identifiable information was removed prior to standardization in accordance with Senegalese Law No. 2008-12 on the Protection of Personal Data.
+This study is a secondary analysis of fully anonymized COVID-19 surveillance data that were routinely collected by IRESSEF and partner sites during the national public health response to the SARS-CoV-2 pandemic. No new data were collected for this study, and no identifiable personal information was used: all direct and indirect identifiers were removed and replaced with anonymized surrogate identifiers before any analysis, in accordance with Senegalese Law No. 2008-12 of 25 January 2008 on the Protection of Personal Data. Because the work involved only the methodological transformation of de-identified, routinely collected surveillance data, it did not constitute human-subjects research requiring prospective ethical review, and no individual informed consent was required for this secondary use. Data access and processing were carried out under the data governance framework of the Data Management Department of IRESSEF. The study was conducted in accordance with the principles of the Declaration of Helsinki.
 
 ## Contributing
 
